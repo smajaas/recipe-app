@@ -1,38 +1,49 @@
 .App {
   text-align: center;
+  /* display: flex;*/
+} 
+
+.recipe-poster {
+  height: 400px;
+  width: 550px;
+  object-fit:cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-name {
+  padding: 16px;
+  font-size: 46px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: red;
+  overflow-wrap: break-word;
+  line-height: 56px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipe-container {
+  background: white;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+  word-wrap: break-word;
+  /* background: yellow; */
+  transition: 0.2s;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipe-container:hover {
+  transform: scale(1.2);
+}
+
+.recipe-list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  /* background: whitesmoke; */
+  background:red;
+  font-family: 'Dosis', sans-serif;
+  
 }
